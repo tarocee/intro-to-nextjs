@@ -1,4 +1,5 @@
 import "./globals.css";
+import Link from "next/link";
 
 
 export const metadata = {
@@ -11,7 +12,18 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+<header style={{ padding: "1rem", borderBottom: "1px solid #ccc" }}>
+          <nav>
+            <ul style={{ display: "flex", gap: "1rem", listStyle: "none" }}>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/about/team">Our Team</Link></li>
+            </ul>
+          </nav>
+        </header>
+        
+        {children}</body>
     </html>
   );
 }

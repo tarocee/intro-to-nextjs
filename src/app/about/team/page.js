@@ -1,3 +1,3 @@
 export default function TeamsPage(){
-    return(<h1>Teams Page</h1>)
+    return(<h1>Our Team</h1>)
 }
