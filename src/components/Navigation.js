@@ -9,6 +9,8 @@ export default function Navigation(){
           <li><Link href="/courses">Courses</Link></li>
           <li><Link href="/about">About</Link></li>
           <li><Link href="/about/team">Our Team</Link></li>
+          <li><Link href="/dashboard">Dashboard</Link></li>
+
         </ul>
         </nav>
         </header>
